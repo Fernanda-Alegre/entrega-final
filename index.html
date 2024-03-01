@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FA Telefonia</title>
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/logo.png" />
+  <!-- PSEUDOELEMENTOS.CSS -->
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="stylesheet" href="./assets/mediaqueries.css" />
+  <link rel="stylesheet" href="./assets/animaciones.css" />
+  <link rel="stylesheet" href="./login/logeo.css">
+  <!-- CDN DE FONT-AWESOME (carrito) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--Icono de WSP-->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <img src="./assets/img/logo.png" alt="Logo JM" class="logo" />
+    <nav class="navbar">
+      <div class="menu-label">
+        <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+      </div>
+
+      <ul class="navbar-list">
+        <li><a class="navbar-link" href="#hero">Home</a></li>
+        <li><a class="navbar-link" href="#info">Diseños</a></li>
+        <li><a class="navbar-link" href="#products">CaseShop</a></li>
+
+        <li>
+          <a href="/registro/register.html" target="_self">Registrarse</a>
+        </li>
+        <li>
+          <a href="" target="_blank"id="login-link" ><img src="./assets/img/user-circle.svg" alt="" class="iconohome"></a><div id="user-info" style="display: none;"></div>
+          
+  <!-- LOGEO -->
+  <!-- <button id="login-btn">Login</button> -->
+  <div class="login-modal">
+    <div class="login-modal-content">
+      <h2 class="h2log">Login</h2>
+      <p>Ingresar nombre de ususario y contraseña</p>
+      <form id="login-form" class="login-form">
+        <input type="text" id="username-input" placeholder="User( 7 letras )">
+        <input type="password" id="password-input" placeholder="Password (7 letras o numeros)">
+        <button type="submit" class="form__submit__btn" >Ingrese</button>
+      </form>
+      <div id="error-message" style="display: none;"></div>
+    </div>
+  </div>
+  
+  
+  
+        </li>
+      </ul>
+
+      <div class="cart-label">
+        <i class="fa-solid fa-cart-shopping cart-icon"><span  id="cantidadCarrito" class="cantidadCarrito"></span></i>
+      </div>
+
+      <div class="cart">
+        <h2>Tus Productos</h2>
+
+        <div class="cart-container"></div>
+
+        <span class="divider"></span>
+
+        <div class="cart-total">
+          <p>Total:</p>
+          <span class="total">0.00</span>
+        </div>
+        <button class="btn-buy">Comprar</button>
+        <button class="btn-delete">Vaciar carrito</button>
+      </div>
+
+      <div class="overlay"></div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <section id="hero">
+      <div class="hero-info">
+        <h1>La máxima protección para tu telefono</h1>
+        <p>
+          En FA Telefonia nos preocupamos por la seguridad de tu pantalla con vidrios templados y tecnologia 9D, mezclados con estilos 
+          modernos de tu TPU y de excelente calidad para tu 
+          celular, con amplia variedad de modelos, colores y algunos otros accesorios utiles para vos...
+        </p>
+        
+      </div>
+      <div class="hero-card">
+        <img src="./assets/img/hero/hero-card.png" alt="ejemplo" />
+        <div class="hero-card-info">
+          <div class="hero-card-top">
+            <h3>"Las mejores fundas del mercado"</h3>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <div><a href="https://WhatsApp1154647236" target="_blank"> 
+      <img src="/assets/img/wspicon.svg" alt="WhatsApp">
+    </a></div>
+    <a href="https://api.whatsapp.com/send?phone=1154647236" class="btn-wsp" target="_blank">
+      <i class="fa fa-whatsapp icono"></i>
+  </a>
+    <!-- info -->
+    <section id="info">
+      <h2>Crea tus diseños personalizados</h2>
+     <p>Podemos realizar la personalización de tu TPU, combinando colores, fotos, y cualquier cosa que se te ocurra
+       en tu case personalizado
+     </p>
+        <div class="info-cards-container">
+        <div class="info-card">
+        <h3>Agregá tu diseño!!</h3></div>
+      
+    </section>
+
+    <!-- productos -->
+    <section id="products">
+      <h2>CASE SHOP</h2>
+      <!-- categorias -->
+      <div class="categories">
+        <button class="category active">Todas</button>
+        <button class="category" data-category="cristal">Cristal</button>
+        <button class="category" data-category="Rígida">Rígidas</button>
+        <button class="category" data-category="seguridad">Seguridad</button>
+        <button class="category" data-category="mundial">Mundial</button>
+        <button class="category" data-category="templados">Templados</button>
+      </div>
+
+      <!-- productoss -->
+      <div class="products-container"></div>
+      <button class="btn-load">Ver Más</button>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <ul class="footer-links">
+        <li><a>📍Caballito ciudad autonoma de Buenos Aires </a></li>
+        <li><a>☎ WhatsApp: 1154647236</a></li>
+        <li><a>📧 E-Mail: FerAlegre47@gmail.com</a></li>
+      </ul>
+    </div>
+    <p>Hecho por Fernanda Alegre <span>FA Telefonía</span></p>
+  </footer>
+  <div class="add-modal"></div>
+  <script src="./assets/data.js"></script>
+  <script src="./assets/index.js"></script>
+  <script src="./login/applogeo.js"></script>
+
+  
+</body>
+
+</html>
